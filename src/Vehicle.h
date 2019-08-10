@@ -58,11 +58,11 @@ public:
   uint_16 getVehicleId();
   double getTargetVelocity();
   double getMaxAcceleration();
-  double getTargetDeveleration;
+  double getTargetDeceleration();
   Position getPosition();
   Position getStartingPosition();
   double getPoliteness();
-  double getMinDistance()
+  double getMinDistance();
   
 private:
   const uint_16 vehicleID;

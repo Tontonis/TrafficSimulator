@@ -50,3 +50,43 @@ bool Vehicle::operator==(const Vehicle& other) const
 {
 
 }
+
+uint_16 Vehicle::getVehicleId()
+{
+  return vehicleID;
+}
+
+double Vehicle::getTargetVelocity()
+{
+  return targetVelocity;
+}
+
+double Vehicle::getMaxAcceleration()
+{
+  return maxAcceleration;
+}
+
+double Vehicle::getTargetDeceleration()
+{
+  return targetDeceleration;
+}
+
+Position Vehicle::getPosition()
+{
+  return position;
+}
+
+Position Vehicle::getStartingPosition()
+{
+  return startingPosition;
+}
+
+double Vehicle::getPoliteness()
+{
+  return politeness;
+}
+
+double Vehicle::getMinDistance()
+{
+  return getMinDistance();
+}
