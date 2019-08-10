@@ -27,14 +27,31 @@
 #ifndef VEHICLE_H
 #define VEHICLE_H
 
+class Position{
+private:
+  Street &street;
+  unsigned int lane;
+  double distance;
+  
+public:
+  Position(Street &street, unsigned int lane, double distance);
+  Street *getStreet() const;
+  unsigned int getLane() const;
+  double getDistance() const;
+}
+
+
+
 class Vehicle
 {
+private:
+  
 public:
-Vehicle();
-Vehicle(const Vehicle& other);
-~Vehicle();
-Vehicle& operator=(const Vehicle& other);
-bool operator==(const Vehicle& other) const;
+  Vehicle();
+  Vehicle(const Vehicle& other);
+  ~Vehicle();
+  Vehicle& operator=(const Vehicle& other);
+  bool operator==(const Vehicle& other) const;
 };
 
 #endif // VEHICLE_H
