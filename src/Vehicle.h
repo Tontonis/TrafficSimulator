@@ -38,7 +38,7 @@ public:
   Street *getStreet() const;
   unsigned int getLane() const;
   double getDistance() const;
-}
+};
 
 
 
@@ -53,11 +53,25 @@ public:
   bool operator==(const Vehicle& other) const;
   Position position;
   
+ // getter functions for parameters
+  
+  uint_16 getVehicleId();
+  double getTargetVelocity();
+  double getMaxAcceleration();
+  double getTargetDeveleration;
+  Position getPosition();
+  Position getStartingPosition();
+  double getPoliteness();
+  double getMinDistance()
+  
 private:
+  const uint_16 vehicleID;
   const double targetVelocity;
   const double maxAcceleration;
   const Position startingPosition;
-  const double
-};s
+  const double targetDeceleration;
+  const double politeness;
+  const double minDistance;
+};
 
 #endif // VEHICLE_H
