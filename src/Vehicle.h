@@ -44,7 +44,6 @@ public:
 
 class Vehicle
 {
-private:
   
 public:
   Vehicle();
@@ -52,6 +51,13 @@ public:
   ~Vehicle();
   Vehicle& operator=(const Vehicle& other);
   bool operator==(const Vehicle& other) const;
-};
+  Position position;
+  
+private:
+  const double targetVelocity;
+  const double maxAcceleration;
+  const Position startingPosition;
+  const double
+};s
 
 #endif // VEHICLE_H
