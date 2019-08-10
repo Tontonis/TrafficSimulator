@@ -26,6 +26,25 @@
 
 #include "src/Vehicle.h"
 
+Position::Position(Street &_street, unsigned int _lane, double _distance) 
+			  : street(&_street), lane(_lane), distance(_distance) {}
+			  
+double Position::getDistance() const
+{
+  return distance;
+}
+
+unsigned int Position::getLane() const
+{
+  return lane;
+}
+
+Street* Position::getStreet() const
+{
+  return street;
+}
+
+
 Vehicle::Vehicle()
 {
 
